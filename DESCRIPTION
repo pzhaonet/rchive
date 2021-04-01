@@ -1,0 +1,24 @@
+Package: rchive
+Version: 0.0.0
+Date: 2021-03-30
+Title: View R Archives
+Authors@R: c(
+    person("Peng", "Zhao", role = c("aut", "cre"), email = "pzhao@pzhao.net"),
+    person("jiena", role = "ctb"),
+    person("tctcab", role = "ctb"),
+    person("Cloud2016", role = "ctb"),
+    person("yihui", role = "ctb")
+  )
+Maintainer: Peng Zhao <pzhao@pzhao.net>
+Depends: 
+  R (>= 3.1.0),
+Imports: dygraphs, ggplot2, dplyr, magrittr
+Suggests:
+Description: rchive
+License: GPL-3 | file LICENSE
+URL: https://github.com/pzhaonet/rchive
+BugReports: https://github.com/pzhaonet/rchive/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+LazyData: true
