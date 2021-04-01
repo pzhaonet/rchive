@@ -1,6 +1,6 @@
 Package: rchive
-Version: 0.0.0
-Date: 2021-03-30
+Version: 0.0.1
+Date: 2021-04-01
 Title: View R Archives
 Authors@R: c(
     person("Peng", "Zhao", role = c("aut", "cre"), email = "pzhao@pzhao.net"),
@@ -12,7 +12,7 @@ Authors@R: c(
 Maintainer: Peng Zhao <pzhao@pzhao.net>
 Depends: 
   R (>= 3.1.0),
-Imports: dygraphs, ggplot2, dplyr, magrittr
+Imports: dygraphs, ggplot2, dplyr, magrittr, shiny, rappdirs, curl
 Suggests:
 Description: rchive
 License: GPL-3 | file LICENSE
