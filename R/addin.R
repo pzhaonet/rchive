@@ -90,6 +90,8 @@ rchive <- function() {
   )
   server <- function(input, output, session) {
 
+    withProgress(message = 'Hodor', value = 0, {
+      incProgress(0.618, detail = "Loading database... ")
     # Load old database ------------------------------------
     datapath <- rappdirs::user_data_dir("rchive", "pzhaonet")
     dbfile <- file.path(datapath, "db.RData")
@@ -99,12 +101,18 @@ rchive <- function() {
     output$filetime <- renderText({
       paste('(Updated at ',  file.mtime(dbfile), ")")
     })
+    incProgress(1, detail = "Loading database... ")
 
     # Update the database ----------------------------------
     observeEvent(input$update, {
+      withProgress(message = 'Hodor', value = 1, {
+      incProgress(0.618, detail = "Updating database... ")
+
       curl::curl_download(url, destfile = dbfile, mode = "wb")
       output$filetime <- renderText({
         paste('(Updated at ',  file.mtime(dbfile), ")")
+      })
+      incProgress(1, detail = "Updating database... ")
       })
     })
     load(dbfile)
@@ -179,6 +187,7 @@ rchive <- function() {
 
     })
 
+    })
   }
 
   # Run the addin
