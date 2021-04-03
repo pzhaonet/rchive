@@ -15,7 +15,7 @@ For the first time you use it, you have to wait (with doing nothing) about 10 se
 
 The onlne database is updated on a daily base. It means, if you click the 'Update' button today, you don't have to click it again until tomorrow.
 
-If you don't want to install it, you could ues the [online version](sciwis.shinyapps.io/rchive/).
+If you don't want to install it, you could ues the [online version](https://sciwis.shinyapps.io/rchive/).
 
 ----
 
@@ -53,6 +53,6 @@ GitHub 上的数据是用 Travis 每天自动更新的。所以，如果你今�
 
 ## 其他
 
-这个工具有个[在线免安装版online version](sciwis.shinyapps.io/rchive/)。
+这个工具有个[在线免安装版online version](https://sciwis.shinyapps.io/rchive/)。
 
 
